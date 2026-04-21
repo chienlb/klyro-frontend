@@ -4,14 +4,14 @@ import Link from "next/link"
 import { UserCircleIcon } from "@heroicons/react/24/outline"
 
 const NAV_LINKS = [
-    { name: 'Khóa học', href: '/' },
-    { name: 'Từ vựng', href: '/' },
-    { name: 'Luyện nghe', href: '/' },
-    { name: 'Luyện thi HSK', href: '/' },
-    { name: 'Thi thử', href: '/' },
-    { name: 'Tài liệu', href: '/' },
-    { name: 'Tin tức', href: '/' },
-    { name: 'Liên hệ', href: '/' },
+    { name: 'Khóa học', href: '/courses' },
+    { name: 'Từ vựng', href: '/vocabulary' },
+    { name: 'Luyện nghe', href: '/listening' },
+    { name: 'Luyện thi HSK', href: '/hsk-training' },
+    { name: 'Thi thử', href: '/mock-test' },
+    { name: 'Tài liệu', href: '/documents' },
+    { name: 'Tin tức', href: '/news' },
+    { name: 'Liên hệ', href: '/contact' },
 ];
 
 export default function Header() {
