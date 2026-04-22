@@ -4,10 +4,13 @@ import Link from "next/link"
 import { UserCircleIcon } from "@heroicons/react/24/outline"
 
 const NAV_LINKS = [
-    { name: 'Khóa học', href: '/courses' },
+    { name: 'Phát âm', href: '/pronunciation' },
     { name: 'Từ vựng', href: '/vocabulary' },
+    { name: 'Ngữ pháp', href: '/grammar' },
+    { name: 'Hán tự', href: '/characters' },
     { name: 'Luyện nghe', href: '/listening' },
-    { name: 'Luyện thi HSK', href: '/hsk-training' },
+    { name: 'Luyện nói', href: '/speaking' },
+    { name: 'Luyện đọc', href: '/reading' },
     { name: 'Thi thử', href: '/mock-test' },
     { name: 'Tài liệu', href: '/documents' },
     { name: 'Tin tức', href: '/news' },
