@@ -16,19 +16,19 @@ export default function Home() {
                 <section className="relative overflow-hidden bg-gradient-to-b from-red-50 to-white pt-20 pb-32">
                     <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12">
                         <div className="flex-1 text-center md:text-left">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F26076]/10 text-[#F26076] font-medium text-sm mb-6">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#D95375]/10 text-[#D95375] font-medium text-sm mb-6">
                                 <SparklesIcon className="w-5 h-5" />
                                 <span>Nền tảng học tiếng Trung #1</span>
                             </div>
                             <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
                                 Chinh phục tiếng Trung <br />
-                                <span className="text-[#F26076]">dễ dàng hơn</span> bao giờ hết
+                                <span className="text-[#D95375]">dễ dàng hơn</span> bao giờ hết
                             </h1>
                             <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto md:mx-0">
                                 Lộ trình cá nhân hóa, hệ thống bài giảng sinh động và ngân hàng đề thi sát thực tế. Bắt đầu hành trình chinh phục HSK ngay hôm nay.
                             </p>
                             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
-                                <Link href="/signup" className="w-full sm:w-auto px-8 py-4 bg-[#F26076] hover:bg-[#D95375] text-white rounded-full font-bold shadow-lg shadow-[#F26076]/30 transition-all hover:-translate-y-1">
+                                <Link href="/signup" className="w-full sm:w-auto px-8 py-4 bg-[#D95375] hover:bg-[#D95375] text-white rounded-full font-bold shadow-lg shadow-[#D95375]/30 transition-all hover:-translate-y-1">
                                     Bắt đầu học miễn phí
                                 </Link>
                                 <Link href="/exam" className="w-full sm:w-auto px-8 py-4 bg-white text-gray-800 border border-gray-200 hover:border-gray-300 rounded-full font-bold shadow-sm transition-all hover:bg-gray-50">
@@ -38,7 +38,7 @@ export default function Home() {
                         </div>
                         <div className="flex-1 w-full relative mt-10 md:mt-0">
                             {/* Decorative glow behind the image */}
-                            <div className="absolute inset-0 bg-gradient-to-tr from-[#F26076]/30 to-orange-300/40 rounded-full blur-[100px] transform scale-110 z-0 pointer-events-none"></div>
+                            <div className="absolute inset-0 bg-gradient-to-tr from-[#D95375]/30 to-orange-300/40 rounded-full blur-[100px] transform scale-110 z-0 pointer-events-none"></div>
 
                             <div className="relative w-full max-w-2xl mx-auto flex items-center justify-center z-10 group">
                                 {/* The framed image container */}
@@ -54,7 +54,7 @@ export default function Home() {
 
                             {/* Decorative elements */}
                             <div className="absolute top-1/4 -left-4 md:-left-10 bg-white/90 backdrop-blur-md px-5 py-3 rounded-2xl shadow-xl border border-white/50 animate-bounce z-20" style={{ animationDuration: '3s' }}>
-                                <p className="font-bold text-[#F26076] text-lg">HSK 4</p>
+                                <p className="font-bold text-[#D95375] text-lg">HSK 4</p>
                                 <p className="text-xs text-gray-500 font-medium">Đã đạt mục tiêu!</p>
                             </div>
                             <div className="absolute bottom-1/4 -right-4 md:-right-8 bg-white/90 backdrop-blur-md px-5 py-3 rounded-2xl shadow-xl border border-white/50 z-20">
@@ -72,19 +72,19 @@ export default function Home() {
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-100">
                             <div className="px-4">
-                                <p className="text-4xl font-extrabold text-[#F26076] mb-2">50K+</p>
+                                <p className="text-4xl font-extrabold text-[#D95375] mb-2">50K+</p>
                                 <p className="text-gray-500 font-medium">Học viên theo học</p>
                             </div>
                             <div className="px-4">
-                                <p className="text-4xl font-extrabold text-[#F26076] mb-2">500+</p>
+                                <p className="text-4xl font-extrabold text-[#D95375] mb-2">500+</p>
                                 <p className="text-gray-500 font-medium">Bài giảng video</p>
                             </div>
                             <div className="px-4">
-                                <p className="text-4xl font-extrabold text-[#F26076] mb-2">98%</p>
+                                <p className="text-4xl font-extrabold text-[#D95375] mb-2">98%</p>
                                 <p className="text-gray-500 font-medium">Tỉ lệ đỗ HSK</p>
                             </div>
                             <div className="px-4">
-                                <p className="text-4xl font-extrabold text-[#F26076] mb-2">4.9/5</p>
+                                <p className="text-4xl font-extrabold text-[#D95375] mb-2">4.9/5</p>
                                 <p className="text-gray-500 font-medium">Đánh giá trung bình</p>
                             </div>
                         </div>
@@ -103,21 +103,21 @@ export default function Home() {
                                 {
                                     title: "Lộ trình bài bản",
                                     desc: "Các khóa học từ cơ bản đến nâng cao, bám sát cấu trúc đề thi HSK mới nhất.",
-                                    icon: <AcademicCapIcon className="w-8 h-8 text-[#F26076]" />
+                                    icon: <AcademicCapIcon className="w-8 h-8 text-[#D95375]" />
                                 },
                                 {
                                     title: "Ngân hàng đề thi",
                                     desc: "Hàng ngàn câu hỏi luyện tập và bộ đề thi thật các năm giúp bạn tự tin phòng thi.",
-                                    icon: <BookOpenIcon className="w-8 h-8 text-[#F26076]" />
+                                    icon: <BookOpenIcon className="w-8 h-8 text-[#D95375]" />
                                 },
                                 {
                                     title: "Theo dõi tiến độ",
                                     desc: "Hệ thống AI phân tích điểm mạnh yếu, cá nhân hóa bài tập mỗi ngày cho riêng bạn.",
-                                    icon: <ChartBarIcon className="w-8 h-8 text-[#F26076]" />
+                                    icon: <ChartBarIcon className="w-8 h-8 text-[#D95375]" />
                                 }
                             ].map((feature, idx) => (
                                 <div key={idx} className="p-8 rounded-3xl bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all border border-gray-100">
-                                    <div className="w-14 h-14 bg-[#F26076]/10 rounded-2xl flex items-center justify-center mb-6">
+                                    <div className="w-14 h-14 bg-[#D95375]/10 rounded-2xl flex items-center justify-center mb-6">
                                         {feature.icon}
                                     </div>
                                     <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
@@ -137,7 +137,7 @@ export default function Home() {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
                             {/* Connecting Line */}
-                            <div className="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-[#F26076]/20 to-[#ff7a8e]/20 -translate-y-1/2 z-0"></div>
+                            <div className="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-[#D95375]/20 to-[#ff7a8e]/20 -translate-y-1/2 z-0"></div>
                             
                             {[
                                 { step: "01", title: "Kiểm tra đầu vào", desc: "Test miễn phí để xác định chính xác trình độ hiện tại." },
@@ -146,7 +146,7 @@ export default function Home() {
                                 { step: "04", title: "Thi thử sát thực tế", desc: "Làm quen áp lực phòng thi với ngân hàng đề thi đa dạng." },
                             ].map((item, idx) => (
                                 <div key={idx} className="relative z-10 bg-white rounded-3xl p-8 text-center shadow-sm border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-2">
-                                    <div className="w-16 h-16 bg-gradient-to-br from-[#F26076] to-[#ff7a8e] rounded-2xl flex items-center justify-center text-white text-2xl font-black mx-auto mb-6 shadow-lg shadow-[#F26076]/30">
+                                    <div className="w-16 h-16 bg-gradient-to-br from-[#D95375] to-[#ff7a8e] rounded-2xl flex items-center justify-center text-white text-2xl font-black mx-auto mb-6 shadow-lg shadow-[#D95375]/30">
                                         {item.step}
                                     </div>
                                     <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
@@ -165,7 +165,7 @@ export default function Home() {
                                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Khóa học tiêu biểu</h2>
                                 <p className="text-gray-500 text-lg">Đa dạng lựa chọn cho mọi nhu cầu và trình độ.</p>
                             </div>
-                            <Link href="/courses" className="text-[#F26076] font-semibold hover:underline">Xem tất cả khóa học →</Link>
+                            <Link href="/courses" className="text-[#D95375] font-semibold hover:underline">Xem tất cả khóa học →</Link>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -187,7 +187,7 @@ export default function Home() {
                                             <span className="flex items-center gap-1"><BookOpenIcon className="w-4 h-4" /> {course.lessons} Bài học</span>
                                             <span className="flex items-center gap-1"><UserCircleIcon className="w-4 h-4" /> {course.students}</span>
                                         </div>
-                                        <button className="w-full py-3 bg-gray-50 text-gray-900 font-semibold rounded-xl hover:bg-[#F26076] hover:text-white transition-colors">
+                                        <button className="w-full py-3 bg-gray-50 text-gray-900 font-semibold rounded-xl hover:bg-[#D95375] hover:text-white transition-colors">
                                             Xem chi tiết
                                         </button>
                                     </div>
@@ -201,16 +201,16 @@ export default function Home() {
                 <section className="py-24 bg-gray-50 overflow-hidden relative">
                     {/* Background decorations */}
                     <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-b from-white/0 via-white to-white/0 pointer-events-none"></div>
-                    <div className="absolute -top-40 -right-40 w-96 h-96 bg-[#F26076]/10 rounded-full blur-3xl"></div>
+                    <div className="absolute -top-40 -right-40 w-96 h-96 bg-[#D95375]/10 rounded-full blur-3xl"></div>
                     <div className="absolute top-1/2 -left-20 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl"></div>
 
                     <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-16 lg:gap-24 relative z-10">
                         <div className="flex-1 w-full relative">
                             {/* Decorative glowing orb behind */}
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-gradient-to-tr from-[#F26076]/30 to-orange-300/30 blur-[60px] rounded-full z-0"></div>
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-gradient-to-tr from-[#D95375]/30 to-orange-300/30 blur-[60px] rounded-full z-0"></div>
 
                             {/* Stacked cards effect (Lồng 2 thẻ chéo) */}
-                            <div className="absolute inset-0 bg-[#F26076]/10 rounded-[2.5rem] transform rotate-[-6deg] scale-[0.98] shadow-sm border border-white/50 z-0 transition-transform duration-500 group-hover:rotate-[-10deg]"></div>
+                            <div className="absolute inset-0 bg-[#D95375]/10 rounded-[2.5rem] transform rotate-[-6deg] scale-[0.98] shadow-sm border border-white/50 z-0 transition-transform duration-500 group-hover:rotate-[-10deg]"></div>
                             
                             {/* Main Flashcard */}
                             <div className="relative bg-white/90 backdrop-blur-xl rounded-[2.5rem] p-10 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white z-10 group hover:-translate-y-2 transition-transform duration-500">
@@ -228,7 +228,7 @@ export default function Home() {
                                     {/* Pinyin with speaker */}
                                     <div className="flex items-center justify-center gap-3 mb-4">
                                         <p className="text-3xl text-gray-500 font-medium">nǐ hǎo</p>
-                                        <button className="w-10 h-10 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center hover:bg-blue-100 hover:scale-110 transition-all cursor-pointer">
+                                        <button className="w-10 h-10 rounded-full bg-blue-50 text-[#e87391] flex items-center justify-center hover:bg-blue-100 hover:scale-110 transition-all cursor-pointer">
                                             <SpeakerWaveIcon className="w-5 h-5" />
                                         </button>
                                     </div>
@@ -257,11 +257,11 @@ export default function Home() {
                         </div>
 
                         <div className="flex-1">
-                            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#F26076]/10 to-orange-400/10 text-[#F26076] font-bold text-sm mb-8 border border-[#F26076]/20 shadow-sm">
+                            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#D95375]/10 to-orange-400/10 text-[#D95375] font-bold text-sm mb-8 border border-[#D95375]/20 shadow-sm">
                                 <SparklesIcon className="w-5 h-5" /> Flashcard AI Thông minh
                             </div>
                             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-                                Học từ vựng <span className="text-[#F26076]">nhanh gấp 3 lần</span>
+                                Học từ vựng <span className="text-[#D95375]">nhanh gấp 3 lần</span>
                             </h2>
                             <p className="text-lg text-gray-600 mb-10 leading-relaxed">
                                 Áp dụng thuật toán Lặp lại ngắt quãng (Spaced Repetition), hệ thống sẽ tự động nhắc lại những từ bạn hay quên vào thời điểm tối ưu nhất. Nhớ lâu hơn, học nhàn hơn.
@@ -283,7 +283,7 @@ export default function Home() {
                                     </div>
                                 ))}
                             </div>
-                            <Link href="/vocabulary" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gray-900 text-white rounded-full font-bold shadow-lg hover:bg-[#F26076] hover:shadow-[#F26076]/30 transition-all hover:-translate-y-1">
+                            <Link href="/vocabulary" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gray-900 text-white rounded-full font-bold shadow-lg hover:bg-[#D95375] hover:shadow-[#D95375]/30 transition-all hover:-translate-y-1">
                                 Khám phá kho từ vựng <PlayCircleIcon className="w-6 h-6" />
                             </Link>
                         </div>
@@ -309,7 +309,7 @@ export default function Home() {
                                     </div>
                                     <p className="text-gray-700 mb-8 italic">"{item.review}"</p>
                                     <div className="flex items-center gap-4">
-                                        <div className="w-12 h-12 bg-gradient-to-br from-[#F26076] to-orange-400 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                                        <div className="w-12 h-12 bg-gradient-to-br from-[#D95375] to-orange-400 rounded-full flex items-center justify-center text-white font-bold text-lg">
                                             {item.name.charAt(0)}
                                         </div>
                                         <div>
@@ -331,7 +331,7 @@ export default function Home() {
                         <div className="absolute inset-0 bg-[#D95375] rounded-3xl transform translate-x-4 translate-y-4 md:translate-x-6 md:translate-y-6 scale-[0.98] z-0 transition-transform duration-300 group-hover:translate-x-8 group-hover:translate-y-8"></div>
 
                         {/* Main CTA Card */}
-                        <div className="relative z-10 bg-gradient-to-br from-[#F26076] to-[#ff7a8e] rounded-3xl p-12 md:p-16 text-center overflow-hidden">
+                        <div className="relative z-10 bg-gradient-to-br from-[#D95375] to-[#ff7a8e] rounded-3xl p-12 md:p-16 text-center overflow-hidden">
                             {/* Ambient light effect inside card */}
                             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-white/20 blur-3xl rounded-full"></div>
 
@@ -341,7 +341,7 @@ export default function Home() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
-                                <Link href="/signup" className="w-full sm:w-auto inline-block px-10 py-4 bg-white text-[#F26076] rounded-full font-bold text-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+                                <Link href="/signup" className="w-full sm:w-auto inline-block px-10 py-4 bg-white text-[#D95375] rounded-full font-bold text-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
                                     Tạo tài khoản miễn phí
                                 </Link>
                             </div>

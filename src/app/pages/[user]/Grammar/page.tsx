@@ -13,13 +13,13 @@ export default function Grammar() {
                 <section className="relative overflow-hidden bg-gradient-to-br from-indigo-50 to-purple-50 pt-20 pb-20">
                     <div className="absolute top-0 right-0 w-1/3 h-full bg-white/40 blur-3xl rounded-full"></div>
                     <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-100 text-indigo-700 font-medium text-sm mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-100 text-[#b63d58] font-medium text-sm mb-6">
                             <SparklesIcon className="w-5 h-5" />
                             <span>Hệ thống ngữ pháp chuẩn HSK</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
                             Khám phá cấu trúc câu <br />
-                            <span className="text-indigo-600">từ cơ bản đến nâng cao</span>
+                            <span className="text-[#D95375]">từ cơ bản đến nâng cao</span>
                         </h1>
                         <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
                             Hơn 500 điểm ngữ pháp được phân loại chi tiết theo từng cấp độ, kèm giải thích dễ hiểu và ví dụ sinh động.
@@ -28,14 +28,14 @@ export default function Grammar() {
                         {/* Search Bar */}
                         <div className="max-w-2xl mx-auto relative group">
                             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                                <MagnifyingGlassIcon className="w-6 h-6 text-gray-400 group-focus-within:text-indigo-500 transition-colors" />
+                                <MagnifyingGlassIcon className="w-6 h-6 text-gray-400 group-focus-within:text-[#e87391] transition-colors" />
                             </div>
                             <input 
                                 type="text" 
-                                className="w-full pl-12 pr-4 py-4 rounded-2xl border-none shadow-lg focus:ring-2 focus:ring-indigo-500 text-lg transition-all" 
+                                className="w-full pl-12 pr-4 py-4 rounded-2xl border-none shadow-lg focus:ring-2 focus:ring-[#e87391] text-lg transition-all" 
                                 placeholder="Tìm kiếm điểm ngữ pháp (VD: 的, 了, 把...)"
                             />
-                            <button className="absolute inset-y-2 right-2 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl transition-colors">
+                            <button className="absolute inset-y-2 right-2 px-6 bg-[#D95375] hover:bg-[#b63d58] text-white font-bold rounded-xl transition-colors">
                                 Tìm kiếm
                             </button>
                         </div>
@@ -49,7 +49,7 @@ export default function Grammar() {
                             {['Tất cả', 'HSK 1', 'HSK 2', 'HSK 3', 'HSK 4', 'HSK 5', 'HSK 6'].map((level, idx) => (
                                 <button 
                                     key={level} 
-                                    className={`px-6 py-2.5 rounded-full font-bold transition-all ${idx === 1 ? 'bg-indigo-600 text-white shadow-md' : 'bg-white text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 border border-gray-200'}`}
+                                    className={`px-6 py-2.5 rounded-full font-bold transition-all ${idx === 1 ? 'bg-[#D95375] text-white shadow-md' : 'bg-white text-gray-600 hover:bg-indigo-50 hover:text-[#D95375] border border-gray-200'}`}
                                 >
                                     {level}
                                 </button>
@@ -99,13 +99,13 @@ export default function Grammar() {
                             ].map((item, idx) => (
                                 <div key={idx} className="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
                                     <div className="flex items-center gap-3 mb-4">
-                                        <div className="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold font-serif text-xl">
+                                        <div className="w-10 h-10 bg-indigo-100 text-[#D95375] rounded-xl flex items-center justify-center font-bold font-serif text-xl">
                                             {item.title.split(' ')[2] || item.title.charAt(0)}
                                         </div>
                                         <h3 className="text-xl font-bold text-gray-900">{item.title}</h3>
                                     </div>
                                     
-                                    <div className="bg-gray-50 p-4 rounded-2xl mb-4 font-mono text-sm text-indigo-700 font-semibold border border-indigo-100/50">
+                                    <div className="bg-gray-50 p-4 rounded-2xl mb-4 font-mono text-sm text-[#b63d58] font-semibold border border-indigo-100/50">
                                         {item.structure}
                                     </div>
                                     
@@ -117,7 +117,7 @@ export default function Grammar() {
                                     </div>
                                     
                                     <div className="mt-6 pt-6 border-t border-gray-50 flex justify-end">
-                                        <button className="text-indigo-600 font-semibold hover:text-indigo-800 flex items-center gap-2">
+                                        <button className="text-[#D95375] font-semibold hover:text-indigo-800 flex items-center gap-2">
                                             Xem chi tiết <CheckCircleIcon className="w-5 h-5" />
                                         </button>
                                     </div>

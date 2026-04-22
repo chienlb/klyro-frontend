@@ -12,12 +12,12 @@ export default function Listening() {
     const [currentAudio, setCurrentAudio] = useState<number | null>(null);
 
     const podcasts = [
-        { id: 1, title: "Đoạn hội thoại giới thiệu bản thân", level: "HSK 1", duration: "2:15", topic: "Giao tiếp", bg: "from-blue-400 to-blue-600" },
+        { id: 1, title: "Đoạn hội thoại giới thiệu bản thân", level: "HSK 1", duration: "2:15", topic: "Giao tiếp", bg: "from-blue-400 to-[#D95375]" },
         { id: 2, title: "Cách gọi món trong nhà hàng", level: "HSK 2", duration: "4:30", topic: "Đời sống", bg: "from-green-400 to-green-600" },
         { id: 3, title: "Trải nghiệm du lịch Bắc Kinh", level: "HSK 3", duration: "6:45", topic: "Du lịch", bg: "from-orange-400 to-orange-600" },
         { id: 4, title: "Kinh nghiệm phỏng vấn xin việc", level: "HSK 4", duration: "8:20", topic: "Công sở", bg: "from-purple-400 to-purple-600" },
         { id: 5, title: "Thảo luận về văn hóa trà Trung Hoa", level: "HSK 5", duration: "12:10", topic: "Văn hóa", bg: "from-red-400 to-red-600" },
-        { id: 6, title: "Bản tin kinh tế buổi sáng", level: "HSK 6", duration: "5:50", topic: "Tin tức", bg: "from-teal-400 to-teal-600" },
+        { id: 6, title: "Bản tin kinh tế buổi sáng", level: "HSK 6", duration: "5:50", topic: "Tin tức", bg: "from-teal-400 to-[#D95375]" },
     ];
 
     const playAudio = (id: number) => {
@@ -37,12 +37,12 @@ export default function Listening() {
                 {/* Hero Section */}
                 <section className="bg-white border-b border-gray-100 pt-16 pb-12">
                     <div className="max-w-7xl mx-auto px-6 text-center">
-                        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 text-blue-600 font-medium text-sm mb-6">
+                        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 text-[#D95375] font-medium text-sm mb-6">
                             <SparklesIcon className="w-4 h-4" />
                             Luyện nghe chủ động & thụ động
                         </div>
                         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
-                            Podcast <span className="text-blue-600">Tiếng Trung</span>
+                            Podcast <span className="text-[#D95375]">Tiếng Trung</span>
                         </h1>
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                             Tắm ngôn ngữ mỗi ngày với hàng trăm bài nghe được phân loại theo trình độ HSK. Phát âm chuẩn bản xứ, kèm phụ đề song ngữ.
@@ -68,7 +68,7 @@ export default function Listening() {
                             {podcasts.map((podcast) => (
                                 <div 
                                     key={podcast.id} 
-                                    className={`bg-white rounded-2xl p-4 flex items-center gap-6 shadow-sm border transition-all hover:shadow-md cursor-pointer ${currentAudio === podcast.id ? 'border-blue-500 ring-1 ring-blue-500' : 'border-gray-100'}`}
+                                    className={`bg-white rounded-2xl p-4 flex items-center gap-6 shadow-sm border transition-all hover:shadow-md cursor-pointer ${currentAudio === podcast.id ? 'border-[#e87391] ring-1 ring-[#e87391]' : 'border-gray-100'}`}
                                     onClick={() => playAudio(podcast.id)}
                                 >
                                     {/* Cover Image Placeholder */}
@@ -88,7 +88,7 @@ export default function Listening() {
                                         <div className="flex items-center gap-2 mb-1">
                                             <span className="px-2.5 py-0.5 bg-gray-100 text-gray-600 font-bold text-xs rounded uppercase tracking-wider">{podcast.topic}</span>
                                         </div>
-                                        <h3 className={`text-lg font-bold mb-2 transition-colors ${currentAudio === podcast.id ? 'text-blue-600' : 'text-gray-900'}`}>
+                                        <h3 className={`text-lg font-bold mb-2 transition-colors ${currentAudio === podcast.id ? 'text-[#D95375]' : 'text-gray-900'}`}>
                                             {podcast.title}
                                         </h3>
                                         <div className="flex items-center gap-4 text-sm font-medium text-gray-500">
@@ -99,7 +99,7 @@ export default function Listening() {
 
                                     <div>
                                         <button 
-                                            className={`w-12 h-12 rounded-full flex items-center justify-center transition-all ${currentAudio === podcast.id ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/30' : 'bg-gray-50 text-gray-400 hover:bg-gray-100 hover:text-gray-900'}`}
+                                            className={`w-12 h-12 rounded-full flex items-center justify-center transition-all ${currentAudio === podcast.id ? 'bg-[#D95375] text-white shadow-lg shadow-[#D95375]/30' : 'bg-gray-50 text-gray-400 hover:bg-gray-100 hover:text-gray-900'}`}
                                         >
                                             {currentAudio === podcast.id && isPlaying ? <PauseIcon className="w-6 h-6" /> : <PlayIcon className="w-6 h-6 ml-1" />}
                                         </button>
@@ -132,7 +132,7 @@ export default function Listening() {
                                 <div className="flex items-center gap-6 mb-2">
                                     <button className="text-gray-400 hover:text-gray-900 transition-colors"><BackwardIcon className="w-6 h-6" /></button>
                                     <button 
-                                        className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 shadow-lg shadow-blue-600/30 transition-transform hover:scale-105"
+                                        className="w-12 h-12 rounded-full bg-[#D95375] text-white flex items-center justify-center hover:bg-[#b63d58] shadow-lg shadow-[#D95375]/30 transition-transform hover:scale-105"
                                         onClick={() => setIsPlaying(!isPlaying)}
                                     >
                                         {isPlaying ? <PauseIcon className="w-6 h-6" /> : <PlayIcon className="w-6 h-6 ml-1" />}
@@ -142,7 +142,7 @@ export default function Listening() {
                                 <div className="w-full flex items-center gap-3">
                                     <span className="text-xs font-medium text-gray-500">0:45</span>
                                     <div className="flex-1 h-1.5 bg-gray-200 rounded-full overflow-hidden cursor-pointer">
-                                        <div className="h-full bg-blue-600 rounded-full w-1/3 relative">
+                                        <div className="h-full bg-[#D95375] rounded-full w-1/3 relative">
                                             <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-white rounded-full shadow border border-gray-200"></div>
                                         </div>
                                     </div>

@@ -16,19 +16,19 @@ export default function Reading() {
                     
                     <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col lg:flex-row items-center gap-12">
                         <div className="flex-1 text-center lg:text-left">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100 text-orange-700 font-bold text-sm mb-6 border border-orange-200">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100 text-[#c24263] font-bold text-sm mb-6 border border-orange-200">
                                 <SparklesIcon className="w-5 h-5" />
                                 <span>Thư viện đọc hiểu cá nhân hóa</span>
                             </div>
                             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6 font-serif">
                                 Mở rộng vốn từ qua <br />
-                                <span className="text-orange-500">từng trang sách</span>
+                                <span className="text-[#e87391]">từng trang sách</span>
                             </h1>
                             <p className="text-lg text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0">
                                 Đọc tin tức, truyện ngắn và bài luận phù hợp chính xác với trình độ HSK của bạn. Tính năng tra từ popup thông minh giúp việc đọc trở nên nhẹ nhàng.
                             </p>
                             <div className="flex justify-center lg:justify-start gap-4">
-                                <button className="px-8 py-4 bg-gray-900 text-white rounded-xl font-bold hover:bg-orange-500 hover:text-white transition-colors shadow-lg">
+                                <button className="px-8 py-4 bg-gray-900 text-white rounded-xl font-bold hover:bg-[#e87391] hover:text-white transition-colors shadow-lg">
                                     Bắt đầu đọc ngay
                                 </button>
                             </div>
@@ -37,12 +37,12 @@ export default function Reading() {
                         <div className="flex-1 w-full max-w-xl">
                             {/* Reading UI Mockup */}
                             <div className="bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 p-8 relative">
-                                <div className="absolute -top-4 -right-4 bg-orange-500 text-white px-4 py-1 rounded-full font-bold shadow-lg transform rotate-6">HSK 3</div>
+                                <div className="absolute -top-4 -right-4 bg-[#e87391] text-white px-4 py-1 rounded-full font-bold shadow-lg transform rotate-6">HSK 3</div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-2 font-serif">中国茶文化</h3>
                                 <p className="text-sm text-gray-400 mb-6 font-mono">Zhōngguó chá wénhuà (Văn hóa trà Trung Quốc)</p>
                                 
                                 <div className="text-lg text-gray-700 leading-loose relative font-serif">
-                                    中国有很长的饮<span className="relative inline-block cursor-pointer group text-orange-600 font-bold">茶
+                                    中国有很长的饮<span className="relative inline-block cursor-pointer group text-[#D95375] font-bold">茶
                                         {/* Popup tooltip */}
                                         <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 bg-gray-900 text-white text-sm rounded-lg p-3 opacity-0 group-hover:opacity-100 transition-opacity z-20 pointer-events-none shadow-xl">
                                             <div className="flex justify-between items-start mb-1">
@@ -63,10 +63,10 @@ export default function Reading() {
                                         <span className="flex items-center gap-1"><LanguageIcon className="w-4 h-4" /> Có dịch</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <div className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-orange-100 hover:text-orange-500 cursor-pointer transition-colors">
+                                        <div className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-orange-100 hover:text-[#e87391] cursor-pointer transition-colors">
                                             <MagnifyingGlassPlusIcon className="w-4 h-4" />
                                         </div>
-                                        <div className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-orange-500 cursor-pointer">
+                                        <div className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-[#e87391] cursor-pointer">
                                             <BookmarkIconSolid className="w-4 h-4" />
                                         </div>
                                     </div>
@@ -109,16 +109,16 @@ export default function Reading() {
                                 <div key={idx} className="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow group flex flex-col h-full cursor-pointer">
                                     <div className="p-6 flex-grow">
                                         <div className="flex justify-between items-start mb-4">
-                                            <span className={`px-3 py-1 text-xs font-bold rounded-md ${article.level.includes('3') ? 'bg-green-100 text-green-700' : article.level.includes('4') ? 'bg-orange-100 text-orange-700' : 'bg-red-100 text-red-700'}`}>
+                                            <span className={`px-3 py-1 text-xs font-bold rounded-md ${article.level.includes('3') ? 'bg-green-100 text-green-700' : article.level.includes('4') ? 'bg-orange-100 text-[#c24263]' : 'bg-red-100 text-[#c24263]'}`}>
                                                 {article.level}
                                             </span>
                                             {article.isHot && (
-                                                <span className="flex items-center gap-1 text-red-500 text-xs font-bold">
+                                                <span className="flex items-center gap-1 text-[#e87391] text-xs font-bold">
                                                     <FireIcon className="w-4 h-4" /> Hot
                                                 </span>
                                             )}
                                         </div>
-                                        <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-orange-600 transition-colors font-serif">{article.title}</h3>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-[#D95375] transition-colors font-serif">{article.title}</h3>
                                         <p className="text-sm text-gray-400 mb-4">{article.pinyin}</p>
                                     </div>
                                     <div className="px-6 py-4 bg-gray-50 border-t border-gray-100 flex justify-between text-sm text-gray-500 font-medium mt-auto">

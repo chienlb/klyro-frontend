@@ -30,7 +30,7 @@ export default function Header() {
                         <li key={item.name}>
                             <Link
                                 href={item.href}
-                                className="text-[15px] font-medium text-gray-600 hover:text-blue-600 transition-colors duration-200"
+                                className="text-[15px] font-medium text-gray-600 hover:text-[#D95375] transition-colors duration-200"
                             >
                                 {item.name}
                             </Link>
@@ -44,7 +44,7 @@ export default function Header() {
                     <li>
                         <Link
                             href="/signup"
-                            className="text-[15px] font-bold text-white bg-[#F26076] hover:bg-[#D95375] px-6 py-2.5 rounded-full transition-all hover:-translate-y-0.5 active:translate-y-0"
+                            className="text-[15px] font-bold text-white bg-[#D95375] hover:bg-[#D95375] px-6 py-2.5 rounded-full transition-all hover:-translate-y-0.5 active:translate-y-0"
                         >
                             Bắt đầu học
                         </Link>
@@ -52,7 +52,7 @@ export default function Header() {
                     <li>
                         <Link
                             href="/login"
-                            className="text-[15px] font-medium text-gray-700 hover:text-blue-600 px-6 py-2.5 rounded-full transition-all hover:-translate-y-0.5 active:translate-y-0"
+                            className="text-[15px] font-medium text-gray-700 hover:text-[#D95375] px-6 py-2.5 rounded-full transition-all hover:-translate-y-0.5 active:translate-y-0"
                         >
                             Đăng nhập
                         </Link>

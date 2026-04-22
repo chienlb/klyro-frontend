@@ -6,14 +6,14 @@ import { SparklesIcon as SparklesSolid } from "@heroicons/react/24/solid"
 
 export default function Vocabulary() {
     const topics = [
-        { id: 1, title: "150 từ vựng HSK 1", count: 150, category: "HSK", progress: 100, color: "from-blue-100 to-blue-50 text-blue-600 border-blue-200" },
+        { id: 1, title: "150 từ vựng HSK 1", count: 150, category: "HSK", progress: 100, color: "from-blue-100 to-blue-50 text-[#D95375] border-blue-200" },
         { id: 2, title: "300 từ vựng HSK 2", count: 300, category: "HSK", progress: 45, color: "from-green-100 to-green-50 text-green-600 border-green-200" },
-        { id: 3, title: "600 từ vựng HSK 3", count: 600, category: "HSK", progress: 0, color: "from-pink-100 to-pink-50 text-[#F26076] border-pink-200" },
+        { id: 3, title: "600 từ vựng HSK 3", count: 600, category: "HSK", progress: 0, color: "from-pink-100 to-pink-50 text-[#D95375] border-pink-200" },
         { id: 4, title: "Từ vựng Giao tiếp Cơ bản", count: 200, category: "Chủ đề", progress: 0, color: "from-purple-100 to-purple-50 text-purple-600 border-purple-200" },
         { id: 5, title: "Du lịch Trung Quốc", count: 120, category: "Chủ đề", progress: 10, color: "from-amber-100 to-amber-50 text-amber-600 border-amber-200" },
-        { id: 6, title: "Văn phòng & Công sở", count: 250, category: "Chủ đề", progress: 0, color: "from-teal-100 to-teal-50 text-teal-600 border-teal-200" },
+        { id: 6, title: "Văn phòng & Công sở", count: 250, category: "Chủ đề", progress: 0, color: "from-teal-100 to-teal-50 text-[#D95375] border-teal-200" },
         { id: 7, title: "Ẩm thực Trung Hoa", count: 85, category: "Chủ đề", progress: 80, color: "from-rose-100 to-rose-50 text-rose-600 border-rose-200" },
-        { id: 8, title: "1200 từ vựng HSK 4", count: 1200, category: "HSK", progress: 0, color: "from-indigo-100 to-indigo-50 text-indigo-600 border-indigo-200" },
+        { id: 8, title: "1200 từ vựng HSK 4", count: 1200, category: "HSK", progress: 0, color: "from-indigo-100 to-indigo-50 text-[#D95375] border-indigo-200" },
     ];
 
     return (
@@ -29,7 +29,7 @@ export default function Vocabulary() {
                                 <SparklesSolid className="w-4 h-4" />
                                 Flashcard thông minh AI
                             </div>
-                            <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">Ngân hàng <span className="text-[#F26076]">Từ vựng</span></h1>
+                            <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">Ngân hàng <span className="text-[#D95375]">Từ vựng</span></h1>
                             <p className="text-gray-600 text-lg max-w-xl">Học từ vựng siêu tốc qua hệ thống lặp lại ngắt quãng (Spaced Repetition). Nhớ lâu hơn, học nhàn hơn.</p>
                         </div>
                         
@@ -37,12 +37,12 @@ export default function Vocabulary() {
                             <div className="bg-gray-50 p-6 rounded-3xl border border-gray-100">
                                 <div className="flex justify-between text-sm mb-2 font-medium">
                                     <span className="text-gray-500">Mục tiêu hôm nay</span>
-                                    <span className="text-[#F26076]">25 / 50 từ</span>
+                                    <span className="text-[#D95375]">25 / 50 từ</span>
                                 </div>
                                 <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 overflow-hidden">
-                                    <div className="bg-[#F26076] h-2.5 rounded-full" style={{ width: '50%' }}></div>
+                                    <div className="bg-[#D95375] h-2.5 rounded-full" style={{ width: '50%' }}></div>
                                 </div>
-                                <button className="w-full py-3 bg-[#F26076] text-white font-bold rounded-xl hover:bg-[#d95375] shadow-lg shadow-[#F26076]/30 transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                                <button className="w-full py-3 bg-[#D95375] text-white font-bold rounded-xl hover:bg-[#d95375] shadow-lg shadow-[#D95375]/30 transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2">
                                     <PlayIcon className="w-5 h-5" /> Ôn tập ngay
                                 </button>
                             </div>
@@ -60,7 +60,7 @@ export default function Vocabulary() {
                                 <input 
                                     type="text" 
                                     placeholder="Tìm kiếm bộ từ vựng..." 
-                                    className="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#F26076] focus:border-transparent outline-none transition-all shadow-sm"
+                                    className="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#D95375] focus:border-transparent outline-none transition-all shadow-sm"
                                 />
                             </div>
                         </div>
@@ -78,7 +78,7 @@ export default function Vocabulary() {
                                         </span>
                                     </div>
                                     
-                                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#F26076] transition-colors">{topic.title}</h3>
+                                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#D95375] transition-colors">{topic.title}</h3>
                                     <p className="text-gray-500 text-sm mb-6 flex items-center gap-1.5">
                                         <BookOpenIcon className="w-4 h-4" /> {topic.count} từ vựng
                                     </p>
@@ -94,7 +94,7 @@ export default function Vocabulary() {
                                         </div>
                                         <div className="w-full bg-gray-100 rounded-full h-1.5 overflow-hidden">
                                             <div 
-                                                className={`h-1.5 rounded-full transition-all duration-1000 ${topic.progress === 100 ? 'bg-green-500' : 'bg-[#F26076]'}`} 
+                                                className={`h-1.5 rounded-full transition-all duration-1000 ${topic.progress === 100 ? 'bg-green-500' : 'bg-[#D95375]'}`} 
                                                 style={{ width: `${topic.progress}%` }}
                                             ></div>
                                         </div>

@@ -8,10 +8,10 @@ export default function Courses() {
     const categories = ["Tất cả", "Cơ bản", "HSK 3", "HSK 4", "HSK 5", "Giao tiếp"];
     
     const courses = [
-        { id: 1, name: "Tiếng Trung Cơ Bản 1", level: "Cơ bản", lessons: 24, students: "12.5K", rating: 4.8, bg: "bg-gradient-to-br from-blue-400 to-blue-600", color: "blue", popular: true },
-        { id: 2, name: "Luyện Thi HSK 3", level: "Trung cấp", lessons: 45, students: "8.2K", rating: 4.9, bg: "bg-gradient-to-br from-[#F26076] to-[#ff7a8e]", color: "rose", popular: true },
+        { id: 1, name: "Tiếng Trung Cơ Bản 1", level: "Cơ bản", lessons: 24, students: "12.5K", rating: 4.8, bg: "bg-gradient-to-br from-blue-400 to-[#D95375]", color: "blue", popular: true },
+        { id: 2, name: "Luyện Thi HSK 3", level: "Trung cấp", lessons: 45, students: "8.2K", rating: 4.9, bg: "bg-gradient-to-br from-[#D95375] to-[#ff7a8e]", color: "rose", popular: true },
         { id: 3, name: "Luyện Thi HSK 4", level: "Nâng cao", lessons: 60, students: "5.4K", rating: 4.7, bg: "bg-gradient-to-br from-purple-400 to-purple-600", color: "purple", popular: false },
-        { id: 4, name: "Giao Tiếp Văn Phòng", level: "Mọi trình độ", lessons: 30, students: "9.1K", rating: 4.9, bg: "bg-gradient-to-br from-teal-400 to-teal-600", color: "teal", popular: false },
+        { id: 4, name: "Giao Tiếp Văn Phòng", level: "Mọi trình độ", lessons: 30, students: "9.1K", rating: 4.9, bg: "bg-gradient-to-br from-teal-400 to-[#D95375]", color: "teal", popular: false },
         { id: 5, name: "Ngữ Pháp HSK 5", level: "Cao cấp", lessons: 50, students: "3.2K", rating: 4.6, bg: "bg-gradient-to-br from-orange-400 to-orange-600", color: "orange", popular: false },
         { id: 6, name: "Tiếng Trung Du Lịch", level: "Cơ bản", lessons: 15, students: "15.3K", rating: 4.8, bg: "bg-gradient-to-br from-emerald-400 to-emerald-600", color: "emerald", popular: true },
     ];
@@ -24,7 +24,7 @@ export default function Courses() {
                 {/* Hero Section */}
                 <section className="bg-white pt-24 pb-16 border-b border-gray-100">
                     <div className="max-w-7xl mx-auto px-6 text-center">
-                        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">Khám phá <span className="text-[#F26076]">Lộ trình học</span></h1>
+                        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">Khám phá <span className="text-[#D95375]">Lộ trình học</span></h1>
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-10">Chọn khóa học phù hợp với mục tiêu của bạn. Từ con số 0 đến thành thạo giao tiếp và chinh phục chứng chỉ HSK.</p>
                         
                         {/* Search Bar */}
@@ -32,9 +32,9 @@ export default function Courses() {
                             <input 
                                 type="text" 
                                 placeholder="Bạn muốn học gì hôm nay?" 
-                                className="w-full px-6 py-4 outline-none text-gray-700 bg-gray-50 border border-gray-200 focus:bg-white focus:border-[#F26076] transition-colors"
+                                className="w-full px-6 py-4 outline-none text-gray-700 bg-gray-50 border border-gray-200 focus:bg-white focus:border-[#D95375] transition-colors"
                             />
-                            <button className="absolute right-2 top-2 bottom-2 px-6 bg-[#F26076] text-white font-semibold rounded-xl hover:bg-[#d95375] transition-colors">
+                            <button className="absolute right-2 top-2 bottom-2 px-6 bg-[#D95375] text-white font-semibold rounded-xl hover:bg-[#d95375] transition-colors">
                                 Tìm kiếm
                             </button>
                         </div>
@@ -92,9 +92,9 @@ export default function Courses() {
                                         
                                         <div className="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
                                             <div className="font-bold text-gray-900 text-lg flex items-center gap-2">
-                                                Miễn phí <CheckBadgeIcon className="w-5 h-5 text-blue-500" />
+                                                Miễn phí <CheckBadgeIcon className="w-5 h-5 text-[#e87391]" />
                                             </div>
-                                            <Link href={`/courses/${course.id}`} className="px-6 py-2.5 bg-gray-50 text-gray-900 font-semibold rounded-xl hover:bg-[#F26076] hover:text-white transition-colors">
+                                            <Link href={`/courses/${course.id}`} className="px-6 py-2.5 bg-gray-50 text-gray-900 font-semibold rounded-xl hover:bg-[#D95375] hover:text-white transition-colors">
                                                 Học ngay
                                             </Link>
                                         </div>

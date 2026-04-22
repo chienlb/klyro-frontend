@@ -6,8 +6,8 @@ export default function Login() {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col md:flex-row">
             {/* Left side - Branding/Illustration */}
-            <div className="hidden md:flex md:w-1/2 bg-gradient-to-br from-orange-100 to-[#F26076]/20 relative overflow-hidden items-center justify-center p-12">
-                <div className="absolute inset-0 bg-[#F26076]/5 backdrop-blur-3xl z-0"></div>
+            <div className="hidden md:flex md:w-1/2 bg-gradient-to-br from-orange-100 to-[#D95375]/20 relative overflow-hidden items-center justify-center p-12">
+                <div className="absolute inset-0 bg-[#D95375]/5 backdrop-blur-3xl z-0"></div>
                 <div className="relative z-10 text-center">
                     <h1 className="text-4xl font-extrabold text-gray-900 mb-6">Chào mừng trở lại!</h1>
                     <p className="text-gray-600 text-lg mb-10 max-w-md mx-auto">Hành trình chinh phục tiếng Trung của bạn đang chờ đón. Hãy tiếp tục ngay hôm nay.</p>
@@ -36,7 +36,7 @@ export default function Login() {
                             <input
                                 type="email"
                                 required
-                                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#F26076] focus:border-transparent outline-none transition-all"
+                                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#D95375] focus:border-transparent outline-none transition-all"
                                 placeholder="name@example.com"
                             />
                         </div>
@@ -44,19 +44,19 @@ export default function Login() {
                         <div>
                             <div className="flex items-center justify-between mb-2">
                                 <label className="block text-sm font-medium text-gray-700">Mật khẩu</label>
-                                <a href="#" className="text-sm font-medium text-[#F26076] hover:underline">Quên mật khẩu?</a>
+                                <a href="#" className="text-sm font-medium text-[#D95375] hover:underline">Quên mật khẩu?</a>
                             </div>
                             <input
                                 type="password"
                                 required
-                                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#F26076] focus:border-transparent outline-none transition-all"
+                                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#D95375] focus:border-transparent outline-none transition-all"
                                 placeholder="••••••••"
                             />
                         </div>
 
                         <button
                             type="submit"
-                            className="w-full py-4 bg-[#F26076] text-white rounded-xl font-bold hover:bg-[#d95375] hover:shadow-lg hover:shadow-[#F26076]/30 transition-all duration-300"
+                            className="w-full py-4 bg-[#D95375] text-white rounded-xl font-bold hover:bg-[#d95375] hover:shadow-lg hover:shadow-[#D95375]/30 transition-all duration-300"
                         >
                             Đăng nhập
                         </button>
@@ -88,7 +88,7 @@ export default function Login() {
 
                     <p className="mt-10 text-center text-sm text-gray-500">
                         Chưa có tài khoản?{' '}
-                        <Link href="/signup" className="font-bold text-[#F26076] hover:underline">
+                        <Link href="/signup" className="font-bold text-[#D95375] hover:underline">
                             Đăng ký ngay
                         </Link>
                     </p>

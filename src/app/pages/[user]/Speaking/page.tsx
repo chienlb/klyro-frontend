@@ -16,24 +16,24 @@ export default function Speaking() {
                     
                     <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-16">
                         <div className="flex-1 text-center md:text-left">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 text-emerald-700 font-bold text-sm mb-6 border border-emerald-200/50 shadow-sm">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 text-[#c24263] font-bold text-sm mb-6 border border-emerald-200/50 shadow-sm">
                                 <SparklesIcon className="w-5 h-5" />
                                 <span>Luyện nói cùng AI Tutor</span>
                             </div>
                             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
                                 Giao tiếp trôi chảy <br />
-                                <span className="text-emerald-600">tự tin thực chiến</span>
+                                <span className="text-[#D95375]">tự tin thực chiến</span>
                             </h1>
                             <p className="text-lg text-gray-600 mb-10 max-w-xl mx-auto md:mx-0">
                                 Đập tan nỗi sợ nói tiếng Trung với phòng luyện tập giả lập AI. Chấm điểm phát âm chi tiết từng âm tiết và sửa lỗi ngay lập tức.
                             </p>
                             
                             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
-                                <button className="px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-bold shadow-lg shadow-emerald-600/30 transition-all hover:-translate-y-1 flex items-center gap-2 w-full sm:w-auto justify-center">
+                                <button className="px-8 py-4 bg-[#D95375] hover:bg-[#c24263] text-white rounded-2xl font-bold shadow-lg shadow-[#D95375]/30 transition-all hover:-translate-y-1 flex items-center gap-2 w-full sm:w-auto justify-center">
                                     <MicrophoneIcon className="w-6 h-6" />
                                     Bắt đầu luyện nói
                                 </button>
-                                <button className="px-8 py-4 bg-white text-emerald-700 border border-emerald-200 rounded-2xl font-bold hover:bg-emerald-50 transition-all w-full sm:w-auto">
+                                <button className="px-8 py-4 bg-white text-[#c24263] border border-emerald-200 rounded-2xl font-bold hover:bg-emerald-50 transition-all w-full sm:w-auto">
                                     Xem hướng dẫn
                                 </button>
                             </div>
@@ -41,11 +41,11 @@ export default function Speaking() {
                         
                         {/* Hero Right: App UI Mockup */}
                         <div className="flex-1 w-full max-w-md mx-auto relative group">
-                            <div className="absolute inset-0 bg-gradient-to-tr from-emerald-400 to-teal-300 rounded-[3rem] transform rotate-3 scale-105 opacity-20 group-hover:rotate-6 transition-transform duration-500"></div>
+                            <div className="absolute inset-0 bg-gradient-to-tr from-[#e87391] to-teal-300 rounded-[3rem] transform rotate-3 scale-105 opacity-20 group-hover:rotate-6 transition-transform duration-500"></div>
                             
                             <div className="relative bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border-8 border-white/80 z-10">
                                 {/* App Header */}
-                                <div className="bg-emerald-600 p-6 text-white flex items-center justify-between">
+                                <div className="bg-[#D95375] p-6 text-white flex items-center justify-between">
                                     <div className="font-bold">Nhà hàng (餐厅)</div>
                                     <div className="text-sm bg-white/20 px-3 py-1 rounded-full backdrop-blur-md">Đang ghi âm...</div>
                                 </div>
@@ -54,7 +54,7 @@ export default function Speaking() {
                                 <div className="p-6 h-[400px] flex flex-col gap-6 bg-gray-50">
                                     {/* AI Message */}
                                     <div className="flex items-end gap-3 w-5/6">
-                                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center flex-shrink-0 shadow-md">
+                                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#e87391] to-teal-500 flex items-center justify-center flex-shrink-0 shadow-md">
                                             <SparklesIcon className="w-6 h-6 text-white" />
                                         </div>
                                         <div className="bg-white p-4 rounded-2xl rounded-bl-none shadow-sm border border-gray-100">
@@ -65,16 +65,16 @@ export default function Speaking() {
                                     
                                     {/* User Message */}
                                     <div className="flex items-end gap-3 w-5/6 self-end justify-end">
-                                        <div className="bg-emerald-600 p-4 rounded-2xl rounded-br-none shadow-sm text-white relative">
+                                        <div className="bg-[#D95375] p-4 rounded-2xl rounded-br-none shadow-sm text-white relative">
                                             <p className="text-lg font-bold mb-1">我们两位。</p>
                                             <p className="text-sm text-emerald-100">Wǒmen liǎng wèi.</p>
                                             {/* Score Badge */}
-                                            <div className="absolute -top-3 -left-3 bg-white text-emerald-600 text-xs font-bold px-2 py-1 rounded-full shadow-md border border-emerald-100">
+                                            <div className="absolute -top-3 -left-3 bg-white text-[#D95375] text-xs font-bold px-2 py-1 rounded-full shadow-md border border-emerald-100">
                                                 98 điểm
                                             </div>
                                         </div>
                                         <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0 overflow-hidden border-2 border-white shadow-sm">
-                                            <UserCircleIcon className="w-8 h-8 text-emerald-600" />
+                                            <UserCircleIcon className="w-8 h-8 text-[#D95375]" />
                                         </div>
                                     </div>
                                 </div>
@@ -83,14 +83,14 @@ export default function Speaking() {
                                 <div className="p-6 bg-white border-t border-gray-100 flex justify-center items-center">
                                     <div className="flex items-center gap-6">
                                         <div className="w-16 h-1 bg-emerald-100 rounded-full overflow-hidden">
-                                            <div className="w-1/3 h-full bg-emerald-500 rounded-full animate-pulse"></div>
+                                            <div className="w-1/3 h-full bg-[#e87391] rounded-full animate-pulse"></div>
                                         </div>
-                                        <button className="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center shadow-inner hover:bg-emerald-100 transition-colors border-2 border-emerald-200 relative">
-                                            <div className="absolute inset-0 border-2 border-emerald-400 rounded-full animate-ping opacity-50"></div>
+                                        <button className="w-16 h-16 bg-emerald-50 text-[#D95375] rounded-full flex items-center justify-center shadow-inner hover:bg-emerald-100 transition-colors border-2 border-emerald-200 relative">
+                                            <div className="absolute inset-0 border-2 border-[#e87391] rounded-full animate-ping opacity-50"></div>
                                             <MicrophoneIcon className="w-8 h-8" />
                                         </button>
                                         <div className="w-16 h-1 bg-emerald-100 rounded-full overflow-hidden">
-                                            <div className="w-2/3 h-full bg-emerald-500 rounded-full animate-pulse delay-75"></div>
+                                            <div className="w-2/3 h-full bg-[#e87391] rounded-full animate-pulse delay-75"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -118,7 +118,7 @@ export default function Speaking() {
                             ].map((topic, idx) => (
                                 <div key={idx} className="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all group">
                                     <div className="flex justify-between items-start mb-6">
-                                        <div className="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                                        <div className="w-14 h-14 bg-emerald-50 text-[#D95375] rounded-2xl flex items-center justify-center group-hover:bg-[#e87391] group-hover:text-white transition-colors">
                                             {topic.icon}
                                         </div>
                                         <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded-lg">{topic.level}</span>
@@ -126,7 +126,7 @@ export default function Speaking() {
                                     <h3 className="text-xl font-bold text-gray-900 mb-3">{topic.title}</h3>
                                     <p className="text-gray-500 mb-6 line-clamp-2">{topic.desc}</p>
                                     
-                                    <button className="w-full py-3 bg-gray-50 text-gray-700 font-bold rounded-xl hover:bg-emerald-50 hover:text-emerald-700 transition-colors flex items-center justify-center gap-2">
+                                    <button className="w-full py-3 bg-gray-50 text-gray-700 font-bold rounded-xl hover:bg-emerald-50 hover:text-[#c24263] transition-colors flex items-center justify-center gap-2">
                                         Vào phòng luyện tập <PlayIcon className="w-5 h-5" />
                                     </button>
                                 </div>
@@ -140,21 +140,21 @@ export default function Speaking() {
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                             <div className="text-center px-4">
-                                <div className="w-20 h-20 mx-auto bg-white rounded-[2rem] shadow-sm border border-gray-100 flex items-center justify-center mb-6 text-emerald-500">
+                                <div className="w-20 h-20 mx-auto bg-white rounded-[2rem] shadow-sm border border-gray-100 flex items-center justify-center mb-6 text-[#e87391]">
                                     <MicrophoneIcon className="w-10 h-10" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-3">Chấm điểm AI 99%</h3>
                                 <p className="text-gray-500">Công nghệ nhận diện giọng nói độ chính xác cao, chỉ ra lỗi sai đến từng thanh điệu.</p>
                             </div>
                             <div className="text-center px-4">
-                                <div className="w-20 h-20 mx-auto bg-white rounded-[2rem] shadow-sm border border-gray-100 flex items-center justify-center mb-6 text-emerald-500">
+                                <div className="w-20 h-20 mx-auto bg-white rounded-[2rem] shadow-sm border border-gray-100 flex items-center justify-center mb-6 text-[#e87391]">
                                     <ChatBubbleLeftRightIcon className="w-10 h-10" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-3">Tình huống thực tế</h3>
                                 <p className="text-gray-500">Hơn 200 kịch bản giao tiếp được xây dựng dựa trên cuộc sống thực tế tại Trung Quốc.</p>
                             </div>
                             <div className="text-center px-4">
-                                <div className="w-20 h-20 mx-auto bg-white rounded-[2rem] shadow-sm border border-gray-100 flex items-center justify-center mb-6 text-emerald-500">
+                                <div className="w-20 h-20 mx-auto bg-white rounded-[2rem] shadow-sm border border-gray-100 flex items-center justify-center mb-6 text-[#e87391]">
                                     <ChartBarIcon className="w-10 h-10" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-3">Theo dõi tiến độ</h3>

@@ -10,10 +10,10 @@ export default function Documents() {
 
             <main>
                 {/* 1. Hero Section */}
-                <section className="relative bg-gradient-to-br from-indigo-900 to-slate-900 pt-24 pb-32 overflow-hidden">
+                <section className="relative bg-gradient-to-br from-[#b63d58] to-slate-900 pt-24 pb-32 overflow-hidden">
                     {/* Decorative elements */}
-                    <div className="absolute top-0 right-0 w-1/2 h-full bg-indigo-500/10 blur-3xl rounded-full"></div>
-                    <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-blue-500/10 blur-3xl rounded-full"></div>
+                    <div className="absolute top-0 right-0 w-1/2 h-full bg-[#e87391]/10 blur-3xl rounded-full"></div>
+                    <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-[#e87391]/10 blur-3xl rounded-full"></div>
                     
                     <div className="max-w-7xl mx-auto px-6 relative z-10">
                         <div className="text-center max-w-3xl mx-auto">
@@ -32,14 +32,14 @@ export default function Documents() {
                             {/* Search Bar */}
                             <div className="relative group max-w-2xl mx-auto">
                                 <div className="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
-                                    <MagnifyingGlassIcon className="w-6 h-6 text-gray-400 group-focus-within:text-indigo-600 transition-colors" />
+                                    <MagnifyingGlassIcon className="w-6 h-6 text-gray-400 group-focus-within:text-[#D95375] transition-colors" />
                                 </div>
                                 <input 
                                     type="text" 
-                                    className="w-full pl-14 pr-32 py-5 rounded-2xl border-none shadow-2xl focus:ring-4 focus:ring-indigo-500/30 text-lg transition-all" 
+                                    className="w-full pl-14 pr-32 py-5 rounded-2xl border-none shadow-2xl focus:ring-4 focus:ring-[#e87391]/30 text-lg transition-all" 
                                     placeholder="Tìm kiếm giáo trình, đề thi, sách ngữ pháp..."
                                 />
-                                <button className="absolute inset-y-2 right-2 px-8 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl transition-colors shadow-md">
+                                <button className="absolute inset-y-2 right-2 px-8 bg-[#D95375] hover:bg-[#b63d58] text-white font-bold rounded-xl transition-colors shadow-md">
                                     Tìm kiếm
                                 </button>
                             </div>
@@ -56,7 +56,7 @@ export default function Documents() {
                             <div className="w-full lg:w-72 flex-shrink-0">
                                 <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm sticky top-24">
                                     <h3 className="text-lg font-bold text-gray-900 mb-6 flex items-center gap-2">
-                                        <FolderOpenIcon className="w-6 h-6 text-indigo-600" />
+                                        <FolderOpenIcon className="w-6 h-6 text-[#D95375]" />
                                         Danh mục tài liệu
                                     </h3>
                                     <div className="space-y-2">
@@ -71,10 +71,10 @@ export default function Documents() {
                                         ].map((cat, idx) => (
                                             <button 
                                                 key={idx} 
-                                                className={`w-full text-left px-4 py-3 rounded-xl transition-colors flex justify-between items-center ${cat.active ? 'bg-indigo-50 text-indigo-700 font-bold' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900 font-medium'}`}
+                                                className={`w-full text-left px-4 py-3 rounded-xl transition-colors flex justify-between items-center ${cat.active ? 'bg-indigo-50 text-[#b63d58] font-bold' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900 font-medium'}`}
                                             >
                                                 <span className="truncate pr-2">{cat.name}</span>
-                                                <span className={`text-xs px-2 py-1 rounded-md ${cat.active ? 'bg-indigo-100 text-indigo-700' : 'bg-gray-100 text-gray-500'}`}>
+                                                <span className={`text-xs px-2 py-1 rounded-md ${cat.active ? 'bg-indigo-100 text-[#b63d58]' : 'bg-gray-100 text-gray-500'}`}>
                                                     {cat.count}
                                                 </span>
                                             </button>
@@ -96,7 +96,7 @@ export default function Documents() {
                             <div className="flex-1">
                                 <div className="flex justify-between items-center mb-6 bg-white p-4 rounded-2xl border border-gray-200 shadow-sm">
                                     <p className="text-gray-600 font-medium">Hiển thị <span className="font-bold text-gray-900">12</span> trên tổng 1250 tài liệu</p>
-                                    <select className="px-4 py-2 border border-gray-200 rounded-xl bg-gray-50 text-gray-700 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition-all">
+                                    <select className="px-4 py-2 border border-gray-200 rounded-xl bg-gray-50 text-gray-700 font-medium focus:outline-none focus:ring-2 focus:ring-[#e87391] focus:bg-white transition-all">
                                         <option>Mới nhất</option>
                                         <option>Tải nhiều nhất</option>
                                         <option>Đánh giá cao</option>
@@ -120,10 +120,10 @@ export default function Documents() {
                                                         <StarIconSolid className="w-3 h-3" /> HOT
                                                     </div>
                                                 )}
-                                                <div className="absolute top-3 right-3 px-2 py-1 bg-white/80 backdrop-blur text-indigo-700 text-xs font-bold rounded-md border border-indigo-100">
+                                                <div className="absolute top-3 right-3 px-2 py-1 bg-white/80 backdrop-blur text-[#b63d58] text-xs font-bold rounded-md border border-indigo-100">
                                                     {doc.format}
                                                 </div>
-                                                <div className="w-24 h-32 bg-white shadow-lg rounded-r-md border-l-4 border-indigo-600 flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-transform duration-300">
+                                                <div className="w-24 h-32 bg-white shadow-lg rounded-r-md border-l-4 border-[#D95375] flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-transform duration-300">
                                                     <DocumentTextIcon className="w-10 h-10 text-indigo-200" />
                                                     {/* Decorative lines on book cover */}
                                                     <div className="absolute top-4 left-4 right-4 h-1 bg-gray-100"></div>
@@ -132,8 +132,8 @@ export default function Documents() {
                                             </div>
                                             
                                             <div className="p-5 flex-1 flex flex-col">
-                                                <p className="text-xs font-bold text-indigo-600 mb-2 uppercase tracking-wide">{doc.category}</p>
-                                                <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2 leading-snug group-hover:text-indigo-600 transition-colors">{doc.title}</h3>
+                                                <p className="text-xs font-bold text-[#D95375] mb-2 uppercase tracking-wide">{doc.category}</p>
+                                                <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2 leading-snug group-hover:text-[#D95375] transition-colors">{doc.title}</h3>
                                                 
                                                 <div className="mt-auto pt-4 flex items-center justify-between">
                                                     <div className="flex items-center gap-1">
@@ -146,7 +146,7 @@ export default function Documents() {
                                                 </div>
                                             </div>
                                             
-                                            <button className="w-full py-4 bg-gray-50 text-indigo-600 font-bold border-t border-gray-100 hover:bg-indigo-600 hover:text-white transition-colors flex items-center justify-center gap-2">
+                                            <button className="w-full py-4 bg-gray-50 text-[#D95375] font-bold border-t border-gray-100 hover:bg-[#D95375] hover:text-white transition-colors flex items-center justify-center gap-2">
                                                 <ArrowDownTrayIcon className="w-5 h-5" /> Tải xuống
                                             </button>
                                         </div>
@@ -156,7 +156,7 @@ export default function Documents() {
                                 {/* Pagination */}
                                 <div className="mt-12 flex justify-center gap-2">
                                     <button className="w-10 h-10 rounded-xl border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-gray-50 transition-colors">«</button>
-                                    <button className="w-10 h-10 rounded-xl bg-indigo-600 text-white font-bold flex items-center justify-center shadow-md">1</button>
+                                    <button className="w-10 h-10 rounded-xl bg-[#D95375] text-white font-bold flex items-center justify-center shadow-md">1</button>
                                     <button className="w-10 h-10 rounded-xl border border-gray-200 flex items-center justify-center text-gray-700 hover:bg-gray-50 transition-colors font-medium">2</button>
                                     <button className="w-10 h-10 rounded-xl border border-gray-200 flex items-center justify-center text-gray-700 hover:bg-gray-50 transition-colors font-medium">3</button>
                                     <span className="w-10 h-10 flex items-center justify-center text-gray-400">...</span>

@@ -6,8 +6,8 @@ export default function Signup() {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col md:flex-row-reverse">
             {/* Right side - Branding/Illustration */}
-            <div className="hidden md:flex md:w-1/2 bg-gradient-to-bl from-orange-100 to-[#F26076]/20 relative overflow-hidden items-center justify-center p-12">
-                <div className="absolute inset-0 bg-[#F26076]/5 backdrop-blur-3xl z-0"></div>
+            <div className="hidden md:flex md:w-1/2 bg-gradient-to-bl from-orange-100 to-[#D95375]/20 relative overflow-hidden items-center justify-center p-12">
+                <div className="absolute inset-0 bg-[#D95375]/5 backdrop-blur-3xl z-0"></div>
                 <div className="relative z-10 text-center">
                     <h1 className="text-4xl font-extrabold text-gray-900 mb-6">Bắt đầu học ngay!</h1>
                     <p className="text-gray-600 text-lg mb-10 max-w-md mx-auto">Tham gia cùng hàng ngàn học viên Klyro để chinh phục tiếng Trung nhanh chóng và hiệu quả.</p>
@@ -37,7 +37,7 @@ export default function Signup() {
                                 <input
                                     type="text"
                                     required
-                                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#F26076] focus:border-transparent outline-none transition-all"
+                                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#D95375] focus:border-transparent outline-none transition-all"
                                     placeholder="Nguyễn"
                                 />
                             </div>
@@ -46,7 +46,7 @@ export default function Signup() {
                                 <input
                                     type="text"
                                     required
-                                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#F26076] focus:border-transparent outline-none transition-all"
+                                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#D95375] focus:border-transparent outline-none transition-all"
                                     placeholder="Văn A"
                                 />
                             </div>
@@ -57,7 +57,7 @@ export default function Signup() {
                             <input
                                 type="email"
                                 required
-                                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#F26076] focus:border-transparent outline-none transition-all"
+                                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#D95375] focus:border-transparent outline-none transition-all"
                                 placeholder="name@example.com"
                             />
                         </div>
@@ -67,14 +67,14 @@ export default function Signup() {
                             <input
                                 type="password"
                                 required
-                                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#F26076] focus:border-transparent outline-none transition-all"
+                                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#D95375] focus:border-transparent outline-none transition-all"
                                 placeholder="Mật khẩu ít nhất 8 ký tự"
                             />
                         </div>
 
                         <button
                             type="submit"
-                            className="w-full py-4 mt-2 bg-[#F26076] text-white rounded-xl font-bold hover:bg-[#d95375] hover:shadow-lg hover:shadow-[#F26076]/30 transition-all duration-300"
+                            className="w-full py-4 mt-2 bg-[#D95375] text-white rounded-xl font-bold hover:bg-[#d95375] hover:shadow-lg hover:shadow-[#D95375]/30 transition-all duration-300"
                         >
                             Tạo tài khoản
                         </button>
@@ -106,7 +106,7 @@ export default function Signup() {
 
                     <p className="mt-10 text-center text-sm text-gray-500">
                         Đã có tài khoản?{' '}
-                        <Link href="/login" className="font-bold text-[#F26076] hover:underline">
+                        <Link href="/login" className="font-bold text-[#D95375] hover:underline">
                             Đăng nhập
                         </Link>
                     </p>

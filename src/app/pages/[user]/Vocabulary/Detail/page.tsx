@@ -52,7 +52,7 @@ export default function FlashcardDetail() {
                 <div className="hidden md:block flex-1 max-w-md mx-8">
                     <div className="w-full bg-gray-100 rounded-full h-2">
                         <div 
-                            className="bg-[#F26076] h-2 rounded-full transition-all duration-300" 
+                            className="bg-[#D95375] h-2 rounded-full transition-all duration-300" 
                             style={{ width: `${((currentIndex + 1) / flashcards.length) * 100}%` }}
                         ></div>
                     </div>
@@ -68,7 +68,7 @@ export default function FlashcardDetail() {
             {/* Main Study Area */}
             <main className="flex-1 flex flex-col items-center justify-center p-6 pb-24 md:pb-6 relative overflow-hidden">
                 {/* Decorative background */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-[#F26076]/5 to-orange-300/10 blur-[100px] rounded-full z-0 pointer-events-none"></div>
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-[#D95375]/5 to-orange-300/10 blur-[100px] rounded-full z-0 pointer-events-none"></div>
 
                 {/* Flashcard Container - preserves 3D perspective */}
                 <div 
@@ -83,7 +83,7 @@ export default function FlashcardDetail() {
                         <div className="absolute inset-0 backface-hidden bg-white rounded-[3rem] border border-gray-100 flex flex-col items-center justify-center p-10">
                             <button 
                                 onClick={(e) => { e.stopPropagation(); /* Play audio */ }}
-                                className="absolute top-8 right-8 w-12 h-12 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center hover:bg-blue-100 transition-colors"
+                                className="absolute top-8 right-8 w-12 h-12 rounded-full bg-blue-50 text-[#e87391] flex items-center justify-center hover:bg-blue-100 transition-colors"
                             >
                                 <SpeakerWaveIcon className="w-6 h-6" />
                             </button>
@@ -95,13 +95,13 @@ export default function FlashcardDetail() {
                         <div className="absolute inset-0 backface-hidden bg-white rounded-[3rem] border border-gray-100 flex flex-col items-center justify-center p-10 rotate-y-180">
                             <button 
                                 onClick={(e) => { e.stopPropagation(); /* Play audio */ }}
-                                className="absolute top-8 right-8 w-12 h-12 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center hover:bg-blue-100 transition-colors"
+                                className="absolute top-8 right-8 w-12 h-12 rounded-full bg-blue-50 text-[#e87391] flex items-center justify-center hover:bg-blue-100 transition-colors"
                             >
                                 <SpeakerWaveIcon className="w-6 h-6" />
                             </button>
                             
                             <h3 className="text-4xl font-bold text-gray-800 mb-2">{currentCard.pinyin}</h3>
-                            <h4 className="text-2xl font-bold text-[#F26076] mb-8">{currentCard.meaning}</h4>
+                            <h4 className="text-2xl font-bold text-[#D95375] mb-8">{currentCard.meaning}</h4>
                             
                             <div className="w-full h-px bg-gray-100 mb-8"></div>
                             
