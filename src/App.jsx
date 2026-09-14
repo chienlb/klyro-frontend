@@ -12,6 +12,10 @@ import Onboarding from './pages/Onboarding';
 import Contact from './pages/Contact';
 import ApiDocs from './pages/ApiDocs';
 import HelpCenter from './pages/HelpCenter';
+import Enrolment from './pages/Enrolment';
+import LessonView from './pages/LessonView';
+import Blog from './pages/Blog';
+import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar';
 import ChatbotWidget from './components/ChatbotWidget';
 import './App.css';
@@ -33,6 +37,10 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/docs" element={<ApiDocs />} />
         <Route path="/help" element={<HelpCenter />} />
+        <Route path="/enrolment" element={<Enrolment />} />
+        <Route path="/lesson" element={<LessonView />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <ChatbotWidget />
     </Router>

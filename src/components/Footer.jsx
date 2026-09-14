@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-gray-200 pb-12">
         <div className="col-span-1 md:col-span-2">
           <Link to="/" className="flex items-center mb-6">
-            <img src={logo} alt="Klyro Logo" className="h-24" />
+            <img src={logo} alt="Klyro Logo" className="h-16" />
           </Link>
           <p className="text-gray-600 max-w-md mb-6 leading-relaxed">
             Crafting Tomorrow's Leaders Today through Innovative Teaching, Personalized Learning, and a Commitment to Academic Excellence. Join thousands of students mastering English worldwide.
@@ -23,12 +23,13 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-bold mb-6">Quick Links</h4>
           <ul className="space-y-4 text-gray-600">
-            <li><Link to="/categories" className="hover:text-primary transition-colors">Courses & Categories</Link></li>
-            <li><Link to="/enrolment" className="hover:text-primary transition-colors">Enrolment</Link></li>
-            <li><Link to="/study" className="hover:text-primary transition-colors">Study Flashcards</Link></li>
+            <li><Link to="/categories" className="hover:text-primary transition-colors">Courses</Link></li>
+            <li><Link to="/enrolment" className="hover:text-primary transition-colors">Enrollment / Checkout</Link></li>
+            <li><Link to="/lesson" className="hover:text-primary transition-colors">Classroom</Link></li>
+            <li><Link to="/study" className="hover:text-primary transition-colors">Flashcards</Link></li>
+            <li><Link to="/blog" className="hover:text-primary transition-colors">Blog & News</Link></li>
             <li><Link to="/help" className="hover:text-primary transition-colors">Help Center</Link></li>
-            <li><Link to="/students" className="hover:text-primary transition-colors">Student Portal</Link></li>
-            <li><Link to="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
+            <li><Link to="/contact" className="hover:text-primary transition-colors">Contact & API</Link></li>
           </ul>
         </div>
 

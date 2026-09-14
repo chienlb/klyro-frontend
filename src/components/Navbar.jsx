@@ -16,22 +16,34 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const navLinkClass = (path) => {
+    const isActive = location.pathname === path;
+    return `relative transition-colors ${isActive ? 'text-primary font-bold' : 'hover:text-primary'}`;
+  };
+
+  const indicator = (path) => {
+    return location.pathname === path ? (
+      <span className="absolute -bottom-1.5 left-0 w-full h-0.5 bg-primary rounded-full"></span>
+    ) : null;
+  };
+
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
+    <nav className={`sticky top-0 w-full z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
     }`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="Klyro Logo" className="h-10" />
+        <Link to="/" className="flex items-center gap-2 shrink-0">
+          <img src={logo} alt="Klyro Logo" className="h-12 object-contain" />
         </Link>
-        <div className="hidden md:flex gap-8 text-sm font-semibold text-gray-600">
-          <Link to="/" className="text-gray-900">Home</Link>
-          <Link to="/categories" className="hover:text-gray-900 transition-colors">Categories</Link>
-          <Link to="/study" className="hover:text-gray-900 transition-colors">Study</Link>
-          <Link to="/community" className="hover:text-gray-900 transition-colors">Community</Link>
-          <Link to="/profile" className="hover:text-gray-900 transition-colors">Profile</Link>
+        <div className="hidden lg:flex gap-6 text-sm font-semibold text-gray-600 items-center">
+          <Link to="/" className={navLinkClass('/')}>Home {indicator('/')}</Link>
+          <Link to="/categories" className={navLinkClass('/categories')}>Categories {indicator('/categories')}</Link>
+          <Link to="/study" className={navLinkClass('/study')}>Study {indicator('/study')}</Link>
+          <Link to="/lesson" className={navLinkClass('/lesson')}>Lesson {indicator('/lesson')}</Link>
+          <Link to="/community" className={navLinkClass('/community')}>Community {indicator('/community')}</Link>
+          <Link to="/blog" className={navLinkClass('/blog')}>Blog {indicator('/blog')}</Link>
+          <Link to="/profile" className={navLinkClass('/profile')}>Profile {indicator('/profile')}</Link>
           <Link to="/pricing" className="text-secondary font-bold hover:text-secondary/80 transition-colors">Upgrade</Link>
-          <Link to="/about" className="hover:text-gray-900 transition-colors">About</Link>
         </div>
         <div className="flex items-center gap-4">
           <Link to="/login" className="text-gray-900 font-bold hover:opacity-80 transition-opacity">Login</Link>
