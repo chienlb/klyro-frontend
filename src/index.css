@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FF7B72; /* Soft Red */
+  --color-secondary: #65C3C8; /* Teal/Cyan */
+  --color-accent: #FFC837; /* Golden Yellow */
+  --color-info: #6BCBEE; /* Light Blue */
+  --color-cream: #FDF8E7; /* Card background */
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-cream);
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  margin: 0;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
