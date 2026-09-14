@@ -38,9 +38,9 @@ export default function Navbar() {
         <div className="hidden lg:flex gap-6 text-sm font-semibold text-gray-600 items-center">
           <Link to="/" className={navLinkClass('/')}>Home {indicator('/')}</Link>
           <Link to="/categories" className={navLinkClass('/categories')}>Categories {indicator('/categories')}</Link>
+          <Link to="/practice" className={navLinkClass('/practice')}>Practice {indicator('/practice')}</Link>
           <Link to="/study" className={navLinkClass('/study')}>Study {indicator('/study')}</Link>
           <Link to="/lesson" className={navLinkClass('/lesson')}>Lesson {indicator('/lesson')}</Link>
-          <Link to="/community" className={navLinkClass('/community')}>Community {indicator('/community')}</Link>
           <Link to="/blog" className={navLinkClass('/blog')}>Blog {indicator('/blog')}</Link>
           <Link to="/profile" className={navLinkClass('/profile')}>Profile {indicator('/profile')}</Link>
           <Link to="/pricing" className="text-secondary font-bold hover:text-secondary/80 transition-colors">Upgrade</Link>

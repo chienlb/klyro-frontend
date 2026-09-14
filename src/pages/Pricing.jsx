@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Pricing() {
   return (
@@ -22,7 +23,7 @@ export default function Pricing() {
               <li className="flex items-center gap-3 text-gray-700 font-medium"><CheckCircle size={20} className="text-gray-400" /> Standard Flashcards</li>
               <li className="flex items-center gap-3 text-gray-700 font-medium opacity-50"><CheckCircle size={20} className="text-gray-300" /> No Mock Tests</li>
             </ul>
-            <button className="w-full py-4 rounded-full font-bold text-lg border-2 border-gray-200 text-gray-700 hover:border-gray-900 hover:text-gray-900 transition-colors">Current Plan</button>
+            <Link to="/enrolment" className="w-full py-4 rounded-full font-bold text-lg border-2 border-gray-200 text-gray-700 hover:border-gray-900 hover:text-gray-900 transition-colors text-center block">Current Plan</Link>
           </div>
 
           {/* Pro Plan */}
@@ -37,7 +38,7 @@ export default function Pricing() {
               <li className="flex items-center gap-3 text-white font-medium"><CheckCircle size={20} className="text-accent" /> 5 Mock Tests / Month</li>
               <li className="flex items-center gap-3 text-white font-medium"><CheckCircle size={20} className="text-accent" /> Priority Support</li>
             </ul>
-            <button className="w-full py-4 rounded-full font-bold text-lg bg-white text-primary shadow-lg hover:shadow-xl transition-shadow">Upgrade to Pro</button>
+            <Link to="/enrolment" className="w-full py-4 rounded-full font-bold text-lg bg-white text-primary shadow-lg hover:shadow-xl transition-shadow text-center block">Upgrade to Pro</Link>
           </div>
 
           {/* Lifetime Plan */}
@@ -50,7 +51,7 @@ export default function Pricing() {
               <li className="flex items-center gap-3 text-gray-700 font-medium"><CheckCircle size={20} className="text-info" /> Unlimited Mock Tests</li>
               <li className="flex items-center gap-3 text-gray-700 font-medium"><CheckCircle size={20} className="text-info" /> Expert Essay Grading</li>
             </ul>
-            <button className="w-full py-4 rounded-full font-bold text-lg border-2 border-info text-info hover:bg-info hover:text-white transition-colors">Get Lifetime Access</button>
+            <Link to="/enrolment" className="w-full py-4 rounded-full font-bold text-lg border-2 border-info text-info hover:bg-info hover:text-white transition-colors text-center block">Get Lifetime Access</Link>
           </div>
         </div>
 

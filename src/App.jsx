@@ -15,6 +15,7 @@ import HelpCenter from './pages/HelpCenter';
 import Enrolment from './pages/Enrolment';
 import LessonView from './pages/LessonView';
 import Blog from './pages/Blog';
+import PracticeHub from './pages/PracticeHub';
 import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar';
 import ChatbotWidget from './components/ChatbotWidget';
@@ -40,6 +41,7 @@ function App() {
         <Route path="/enrolment" element={<Enrolment />} />
         <Route path="/lesson" element={<LessonView />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/practice" element={<PracticeHub />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <ChatbotWidget />

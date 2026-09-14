@@ -5,6 +5,25 @@ import { useState } from 'react';
 
 export default function Home() {
   const [testimonialIdx, setTestimonialIdx] = useState(0);
+  const [roadmapType, setRoadmapType] = useState('TOEIC');
+
+  const roadmaps = {
+    TOEIC: [
+      { step: 1, title: 'Master the Basics', subtitle: 'Foundation Phase', desc: 'Build a rock-solid foundation of essential grammar and high-frequency business vocabulary used in the modern workplace.', features: ['Core Business Vocab', 'Essential Grammar', 'Short Dialogues'], color: 'bg-primary', textColor: 'text-primary' },
+      { step: 2, title: 'Skill Building & Practice', subtitle: 'Application Phase', desc: 'Transition from learning to doing. Engage with complex business emails, practice identifying keywords in audio, and learn Part 3/4 strategies.', features: ['Listening Strategies', 'Speed Reading', 'Keyword Spotting'], color: 'bg-secondary', textColor: 'text-secondary' },
+      { step: 3, title: 'Exam Prep & Perfection', subtitle: 'Mastery Phase', desc: 'Take full-length mock exams. Build stamina for the 2-hour test, master time management, and analyze mistakes with our AI insights.', features: ['Full Mock Exams', 'Time Management', 'Performance Analytics'], color: 'bg-info', textColor: 'text-info' }
+    ],
+    IELTS: [
+      { step: 1, title: 'Academic Immersion', subtitle: 'Foundation Phase', desc: 'Immerse yourself in academic English. Focus on understanding complex global accents and reading passages from academic journals.', features: ['Academic Vocabulary', 'Global Accents', 'Paragraph Structures'], color: 'bg-info', textColor: 'text-info' },
+      { step: 2, title: 'Active Production', subtitle: 'Application Phase', desc: 'Start speaking and writing. Practice Speaking Part 2 monologues and write structured Task 1 & Task 2 essays with instant AI grading.', features: ['Speaking Mock Tests', 'Essay Writing', 'AI Pronunciation Check'], color: 'bg-accent', textColor: 'text-accent' },
+      { step: 3, title: 'Band 8+ Refinement', subtitle: 'Mastery Phase', desc: 'Refine your advanced vocabulary (lexical resource) and complex grammar. Take timed exams under strict, realistic conditions.', features: ['Band 8+ Lexicon', 'Realistic Mocks', 'Examiner Feedback'], color: 'bg-primary', textColor: 'text-primary' }
+    ],
+    VSTEP: [
+      { step: 1, title: 'B1 Foundation', subtitle: 'Phase 1', desc: 'Master general English vocabulary and essential grammar for everyday communication. Focus on sentence structure and basic listening.', features: ['General Vocab', 'Basic Grammar', 'Everyday Dialogues'], color: 'bg-primary', textColor: 'text-primary' },
+      { step: 2, title: 'B2 Progression', subtitle: 'Phase 2', desc: 'Develop intermediate skills. Practice writing letters/emails and speaking about familiar topics with improved fluency and confidence.', features: ['Letter Writing', 'Topic Speaking', 'Reading Comprehension'], color: 'bg-secondary', textColor: 'text-secondary' },
+      { step: 3, title: 'C1 Mastery', subtitle: 'Phase 3', desc: 'Achieve advanced proficiency. Write argumentative essays, debate complex issues, and comprehend academic and professional texts.', features: ['Argumentative Essays', 'Complex Debates', 'Advanced Texts'], color: 'bg-info', textColor: 'text-info' }
+    ]
+  };
 
   const testimonials = [
     {
@@ -180,58 +199,59 @@ export default function Home() {
       {/* Learning Roadmap */}
       <div className="py-24 bg-white border-y border-gray-100">
         <div className="max-w-6xl mx-auto px-10">
-          <div className="text-center mb-20">
+          <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Your Detailed Learning Roadmap</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">A clear, step-by-step path from beginner to master.</p>
           </div>
           
+          {/* Roadmap Toggle */}
+          <div className="flex justify-center mb-16 overflow-x-auto pb-4">
+            <div className="bg-gray-100 p-1.5 rounded-full inline-flex relative shadow-inner min-w-max">
+              <div 
+                className={`absolute top-1.5 bottom-1.5 w-1/3 bg-white rounded-full shadow-sm transition-transform duration-300 ease-in-out ${roadmapType === 'TOEIC' ? 'translate-x-0' : roadmapType === 'IELTS' ? 'translate-x-full' : 'translate-x-[200%]'}`}
+              ></div>
+              <button 
+                onClick={() => setRoadmapType('TOEIC')}
+                className={`relative z-10 px-8 py-3 rounded-full font-bold text-sm transition-colors w-40 ${roadmapType === 'TOEIC' ? 'text-gray-900' : 'text-gray-500 hover:text-gray-900'}`}
+              >
+                TOEIC Path
+              </button>
+              <button 
+                onClick={() => setRoadmapType('IELTS')}
+                className={`relative z-10 px-8 py-3 rounded-full font-bold text-sm transition-colors w-40 ${roadmapType === 'IELTS' ? 'text-gray-900' : 'text-gray-500 hover:text-gray-900'}`}
+              >
+                IELTS Path
+              </button>
+              <button 
+                onClick={() => setRoadmapType('VSTEP')}
+                className={`relative z-10 px-8 py-3 rounded-full font-bold text-sm transition-colors w-40 ${roadmapType === 'VSTEP' ? 'text-gray-900' : 'text-gray-500 hover:text-gray-900'}`}
+              >
+                VSTEP Path
+              </button>
+            </div>
+          </div>
+          
+          {/* Dynamic Roadmap Steps */}
           <div className="relative border-l-4 border-gray-100 ml-6 md:ml-12 space-y-16">
-            
-            {/* Step 1 */}
-            <div className="relative pl-12 md:pl-24">
-              <div className="absolute top-0 -left-[26px] w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl shadow-lg border-4 border-white">1</div>
-              <div className="bg-white rounded-[2rem] p-8 shadow-xl shadow-gray-200/50 border border-gray-100 hover:-translate-y-2 transition-transform">
-                <span className="text-primary font-bold tracking-wide uppercase text-sm mb-2 block">Foundation Phase</span>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Master the Basics</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">We start by building a rock-solid foundation of essential grammar and high-frequency vocabulary. You'll use our interactive flashcards to memorize the 500 most important words.</p>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700 font-medium">
-                  <li className="flex items-center gap-2"><CheckCircle size={16} className="text-primary" /> Core Vocabulary</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={16} className="text-primary" /> Essential Grammar</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={16} className="text-primary" /> Pronunciation Guides</li>
-                </ul>
+            {roadmaps[roadmapType].map((stepInfo, idx) => (
+              <div key={idx} className="relative pl-12 md:pl-24 group">
+                <div className={`absolute top-0 -left-[26px] w-12 h-12 rounded-full ${stepInfo.color} text-white flex items-center justify-center font-bold text-xl shadow-lg border-4 border-white group-hover:scale-110 transition-transform`}>
+                  {stepInfo.step}
+                </div>
+                <div className="bg-white rounded-[2rem] p-8 shadow-xl shadow-gray-200/50 border border-gray-100 hover:-translate-y-2 hover:shadow-2xl hover:border-gray-200 transition-all duration-300 cursor-pointer">
+                  <span className={`${stepInfo.textColor} font-bold tracking-wide uppercase text-sm mb-2 block`}>{stepInfo.subtitle}</span>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{stepInfo.title}</h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed text-lg">{stepInfo.desc}</p>
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm text-gray-700 font-medium bg-gray-50 p-5 rounded-2xl">
+                    {stepInfo.features.map((feature, fIdx) => (
+                      <li key={fIdx} className="flex items-center gap-3">
+                        <CheckCircle size={18} className={stepInfo.textColor} /> {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
-
-            {/* Step 2 */}
-            <div className="relative pl-12 md:pl-24">
-              <div className="absolute top-0 -left-[26px] w-12 h-12 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-xl shadow-lg border-4 border-white">2</div>
-              <div className="bg-white rounded-[2rem] p-8 shadow-xl shadow-gray-200/50 border border-gray-100 hover:-translate-y-2 transition-transform">
-                <span className="text-secondary font-bold tracking-wide uppercase text-sm mb-2 block">Application Phase</span>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Skill Building & Practice</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">Transition from learning to doing. Engage with complex texts, practice listening to native speakers, and start writing structured paragraphs with our AI feedback system.</p>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700 font-medium">
-                  <li className="flex items-center gap-2"><CheckCircle size={16} className="text-secondary" /> Listening Comprehension</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={16} className="text-secondary" /> Reading Strategies</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={16} className="text-secondary" /> Guided Writing</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Step 3 */}
-            <div className="relative pl-12 md:pl-24">
-              <div className="absolute top-0 -left-[26px] w-12 h-12 rounded-full bg-info text-white flex items-center justify-center font-bold text-xl shadow-lg border-4 border-white">3</div>
-              <div className="bg-white rounded-[2rem] p-8 shadow-xl shadow-gray-200/50 border border-gray-100 hover:-translate-y-2 transition-transform">
-                <span className="text-info font-bold tracking-wide uppercase text-sm mb-2 block">Mastery Phase</span>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Exam Prep & Perfection</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">It's time to test your mettle. Take full-length, timed mock exams for IELTS or TOEIC. Receive detailed analytics on your weaknesses and get expert essay grading.</p>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700 font-medium">
-                  <li className="flex items-center gap-2"><CheckCircle size={16} className="text-info" /> Full Mock Exams</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={16} className="text-info" /> Expert Essay Grading</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={16} className="text-info" /> Performance Analytics</li>
-                </ul>
-              </div>
-            </div>
-
+            ))}
           </div>
         </div>
       </div>
