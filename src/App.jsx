@@ -18,6 +18,7 @@ import Blog from './pages/Blog';
 import PracticeHub from './pages/PracticeHub';
 import StudentVouchers from './pages/StudentVouchers';
 import Notifications from './pages/Notifications';
+import ComingSoon from './pages/ComingSoon';
 import NotFound from './pages/NotFound';
 import AdminLayout from './layouts/AdminLayout';
 import Dashboard from './pages/admin/Dashboard';
@@ -55,6 +56,7 @@ function App() {
         <Route path="/practice" element={<PracticeHub />} />
         <Route path="/vouchers" element={<StudentVouchers />} />
         <Route path="/notifications" element={<Notifications />} />
+        <Route path="/coming-soon" element={<ComingSoon />} />
         
         {/* Admin Routes */}
         <Route path="/admin" element={<AdminLayout />}>
