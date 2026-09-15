@@ -25,6 +25,11 @@ export default function Enrolment() {
               </div>
             </div>
             
+            <div className="mb-6 flex gap-2">
+              <input type="text" placeholder="Promo code / Voucher" className="flex-1 px-4 py-2.5 border border-gray-200 rounded-xl bg-gray-50 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary/50 font-bold uppercase text-gray-900" />
+              <button className="px-6 py-2.5 bg-gray-900 text-white font-bold rounded-xl hover:bg-gray-800 transition-colors">Apply</button>
+            </div>
+
             <div className="space-y-3 text-sm text-gray-600 mb-6">
               <div className="flex justify-between"><span>Subtotal</span><span>$99.00</span></div>
               <div className="flex justify-between text-secondary"><span>Discount (EARLYBIRD)</span><span>-$20.00</span></div>

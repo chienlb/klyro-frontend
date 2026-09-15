@@ -16,7 +16,18 @@ import Enrolment from './pages/Enrolment';
 import LessonView from './pages/LessonView';
 import Blog from './pages/Blog';
 import PracticeHub from './pages/PracticeHub';
+import StudentVouchers from './pages/StudentVouchers';
+import Notifications from './pages/Notifications';
 import NotFound from './pages/NotFound';
+import AdminLayout from './layouts/AdminLayout';
+import Dashboard from './pages/admin/Dashboard';
+import Analytics from './pages/admin/Analytics';
+import UsersManagement from './pages/admin/UsersManagement';
+import ContentManagement from './pages/admin/ContentManagement';
+import Billing from './pages/admin/Billing';
+import AdminVouchers from './pages/admin/Vouchers';
+import Support from './pages/admin/Support';
+import Settings from './pages/admin/Settings';
 import Navbar from './components/Navbar';
 import ChatbotWidget from './components/ChatbotWidget';
 import './App.css';
@@ -42,6 +53,21 @@ function App() {
         <Route path="/lesson" element={<LessonView />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/practice" element={<PracticeHub />} />
+        <Route path="/vouchers" element={<StudentVouchers />} />
+        <Route path="/notifications" element={<Notifications />} />
+        
+        {/* Admin Routes */}
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="analytics" element={<Analytics />} />
+          <Route path="users" element={<UsersManagement />} />
+          <Route path="content" element={<ContentManagement />} />
+          <Route path="billing" element={<Billing />} />
+          <Route path="vouchers" element={<AdminVouchers />} />
+          <Route path="support" element={<Support />} />
+          <Route path="settings" element={<Settings />} />
+        </Route>
+
         <Route path="*" element={<NotFound />} />
       </Routes>
       <ChatbotWidget />

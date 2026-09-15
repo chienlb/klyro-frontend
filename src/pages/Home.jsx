@@ -1,11 +1,28 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { BookOpen, Star, TrendingUp, Users, CheckCircle } from 'lucide-react';
-import { useState } from 'react';
+import { BookOpen, Star, TrendingUp, Users, CheckCircle, Keyboard, Clock } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
   const [testimonialIdx, setTestimonialIdx] = useState(0);
   const [roadmapType, setRoadmapType] = useState('TOEIC');
+  
+  // Countdown Timer Logic (e.g., 2 days from now)
+  const [timeLeft, setTimeLeft] = useState({ days: 2, hours: 14, minutes: 45, seconds: 30 });
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(prev => {
+        let { days, hours, minutes, seconds } = prev;
+        if (seconds > 0) { seconds--; }
+        else if (minutes > 0) { minutes--; seconds = 59; }
+        else if (hours > 0) { hours--; minutes = 59; seconds = 59; }
+        else if (days > 0) { days--; hours = 23; minutes = 59; seconds = 59; }
+        return { days, hours, minutes, seconds };
+      });
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
 
   const roadmaps = {
     TOEIC: [
@@ -80,6 +97,53 @@ export default function Home() {
   return (
     <div className="main-container min-h-screen flex flex-col relative bg-cream">
       <Navbar />
+      
+      {/* Premium Floating Promotional Banner */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-10 mt-8 w-full z-10 relative animate-fade-in-up">
+        <div className="bg-white rounded-[2.5rem] p-1.5 shadow-2xl shadow-primary/20 border border-gray-100 relative overflow-hidden group">
+          
+          <div className="bg-primary rounded-[2.3rem] px-8 py-8 md:px-12 md:py-10 flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
+            {/* Pattern instead of gradient */}
+            <div className="absolute inset-0 opacity-[0.05]" style={{backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E")'}}></div>
+            
+            <div className="relative z-10 flex flex-col md:flex-row items-center gap-8 text-center md:text-left mb-8 md:mb-0 w-full md:w-auto">
+              <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center shrink-0 shadow-xl shadow-black/10 transform group-hover:-translate-y-1 transition-transform duration-500">
+                <Keyboard size={36} className="text-primary" />
+              </div>
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 border border-white/30 text-white text-xs font-bold mb-3 uppercase tracking-widest backdrop-blur-sm">
+                  <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span> Limited Time Offer
+                </div>
+                <h4 className="font-black text-3xl md:text-4xl text-white mb-2 tracking-tight">Level Up Your Career</h4>
+                <p className="text-white/80 text-lg md:text-xl font-medium max-w-xl">
+                  Unlock the <span className="text-white font-bold">Premium TOEIC Masterclass</span>. Use code <span className="bg-white/20 px-3 py-1 rounded-lg border border-white/30 font-mono font-bold text-white mx-1">EARLYBIRD</span> to save $20 today.
+                </p>
+              </div>
+            </div>
+            
+            <div className="relative z-10 flex flex-col items-center md:items-end w-full md:w-auto">
+              {/* Countdown Timer */}
+              <div className="flex items-center gap-3 mb-4 bg-black/20 px-4 py-2 rounded-xl border border-white/10">
+                <Clock size={16} className="text-accent" />
+                <div className="flex gap-2 text-white font-mono font-bold text-lg">
+                  <div className="flex flex-col items-center"><span>{String(timeLeft.days).padStart(2, '0')}</span><span className="text-[10px] text-white/60 font-sans uppercase">Days</span></div>
+                  <span className="animate-pulse">:</span>
+                  <div className="flex flex-col items-center"><span>{String(timeLeft.hours).padStart(2, '0')}</span><span className="text-[10px] text-white/60 font-sans uppercase">Hrs</span></div>
+                  <span className="animate-pulse">:</span>
+                  <div className="flex flex-col items-center"><span>{String(timeLeft.minutes).padStart(2, '0')}</span><span className="text-[10px] text-white/60 font-sans uppercase">Min</span></div>
+                  <span className="animate-pulse">:</span>
+                  <div className="flex flex-col items-center"><span>{String(timeLeft.seconds).padStart(2, '0')}</span><span className="text-[10px] text-white/60 font-sans uppercase">Sec</span></div>
+                </div>
+              </div>
+              
+              <button className="w-full md:w-auto px-8 py-4 bg-accent text-gray-900 text-lg font-black rounded-2xl shadow-xl hover:bg-yellow-400 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3">
+                Claim Your Discount
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       
       {/* Hero Section */}
       <div className="px-10 py-10 grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-7xl mx-auto w-full">

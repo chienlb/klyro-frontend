@@ -5,7 +5,6 @@ import logo from '../assets/logo.png';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -45,7 +44,12 @@ export default function Navbar() {
           <Link to="/profile" className={navLinkClass('/profile')}>Profile {indicator('/profile')}</Link>
           <Link to="/pricing" className="text-secondary font-bold hover:text-secondary/80 transition-colors">Upgrade</Link>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-5">
+          <Link to="/notifications" className="relative text-gray-500 hover:text-primary transition-colors block">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path></svg>
+            <span className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full border-2 border-white"></span>
+          </Link>
+          <div className="h-6 w-px bg-gray-200"></div>
           <Link to="/login" className="text-gray-900 font-bold hover:opacity-80 transition-opacity">Login</Link>
           <Link to="/register" className="bg-secondary text-white px-6 py-2 rounded-full font-semibold hover:opacity-90 transition-opacity shadow-sm">
             Sign Up
