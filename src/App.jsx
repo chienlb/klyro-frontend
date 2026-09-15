@@ -34,6 +34,31 @@ import ChatbotWidget from './components/ChatbotWidget';
 import './App.css';
 
 function App() {
+  const isComingSoonMode = true; // Toggle this to false when you want to launch the website
+
+  if (isComingSoonMode) {
+    return (
+      <Router>
+        <Routes>
+          {/* Catch all public routes and show Coming Soon */}
+          <Route path="*" element={<ComingSoon />} />
+          
+          {/* Keep Admin Dashboard accessible for internal management */}
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="analytics" element={<Analytics />} />
+            <Route path="users" element={<UsersManagement />} />
+            <Route path="content" element={<ContentManagement />} />
+            <Route path="billing" element={<Billing />} />
+            <Route path="vouchers" element={<AdminVouchers />} />
+            <Route path="support" element={<Support />} />
+            <Route path="settings" element={<Settings />} />
+          </Route>
+        </Routes>
+      </Router>
+    );
+  }
+
   return (
     <Router>
       <Routes>
